@@ -1,0 +1,11 @@
+{
+  "name": "afoolishmind",
+  "version": "1.0.0",
+  "description": "personal blog",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gui3",
+  "license": "ISC"
+}
