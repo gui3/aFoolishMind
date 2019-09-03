@@ -6,10 +6,12 @@ router.use(function timeLog(req, res, next) {
 });
 
 router.get('/', function(req, res) {
-  res.send('main home page');
+  // res.send('main home page');
+  res.render("home");
 });
 router.get('/about', function(req, res) {
-  res.send('About');
+  // res.send('About');
+  res.render("about")
 });
 
 const usersRoutes = require("./users")
