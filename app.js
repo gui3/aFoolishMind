@@ -5,6 +5,13 @@ require('dotenv').config()
 
 const models = require("./app/db/models")
 
+models.Article.create(
+  {title:"test", content:"blablabla"},
+  (err, post) => {
+    if (err) {console.log(err)}
+    else {console.log("article test créé")}
+});
+
 const bodyParser = require("body-parser");
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({
